@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f5f1da;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: #158467;
+
+  &:focus {
+    color: #095f48;
+  }
+
+  &:hover {
+    color: #095f48;
+  }
+}

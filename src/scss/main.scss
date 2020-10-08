@@ -1,0 +1,203 @@
+@import "./resets";
+@import "./variables";
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@400;500;700&display=swap");
+
+* {
+  @media screen and (max-width: $mediaSM) {
+    overflow-x: hidden;
+  }
+}
+body {
+  font-family: "Poppins", sans-serif;
+  @media screen and (max-width: $mediaSM) {
+    overflow-x: hidden;
+  }
+}
+
+.App {
+  overflow-x: hidden;
+}
+.navbar-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 80px;
+  background-color: white;
+
+  @media screen and (max-width: $mediaSM) {
+    height: 70px;
+  }
+
+  .navbar-content {
+    width: 60%;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 80px;
+
+    @media screen and (max-width: $mediaSM) {
+      height: 70px;
+      width: 100%;
+    }
+
+    h2 {
+      flex-grow: 2;
+      font-family: "Pacifico", cursive;
+      color: $green;
+      font-size: 2rem;
+
+      @media screen and (max-width: $mediaSM) {
+        font-size: 1.3rem;
+        margin-left: 2rem;
+      }
+    }
+
+    .navbar-link {
+      display: flex;
+
+      @media screen and (max-width: $mediaSM) {
+        display: none;
+      }
+      p {
+        margin-right: 20px;
+        font-size: 1.3rem;
+      }
+    }
+  }
+}
+
+.random-container {
+  margin-top: 150px;
+  width: 70%;
+  height: max-content;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media screen and (max-width: $mediaSM) {
+    width: 100%;
+    margin-top: 130px;
+  }
+
+  h1 {
+    margin-bottom: 15px;
+
+    @media screen and (max-width: $mediaSM) {
+      text-align: center;
+    }
+  }
+  .random-grid {
+    @include gridSM;
+
+    @media screen and (max-width: $mediaSM) {
+      grid-template-columns: repeat(2, 1fr);
+      row-gap: 10px;
+      column-gap: 10px;
+    }
+  }
+
+  .products-view {
+    @include mediumCard;
+
+    @media screen and (max-width: $mediaSM) {
+      @include smallCard;
+      // overflow-y: hidden;
+    }
+
+    .products-name {
+      font-size: 1rem;
+      @media screen and (max-width: $mediaSM) {
+        font-size: small;
+      }
+    }
+
+    img {
+      max-height: 100px;
+      max-width: 150px;
+      margin-top: 20px;
+
+      @media screen and (max-width: $mediaSM) {
+        max-width: 150px;
+      }
+    }
+  }
+}
+
+.step-detail {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px 12px;
+  margin-top: 150px;
+
+  @media screen and (max-width: $mediaSM) {
+    width: 100%;
+    margin-top: 100px;
+  }
+
+  span {
+    display: block;
+    text-align: center;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    color: rgb(243, 52, 84);
+  }
+
+  h1 {
+    text-align: center;
+  }
+
+  h2 {
+    margin-top: 50px;
+  }
+
+  img {
+    max-width: 500px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+    @media screen and (max-width: $mediaSM) {
+      max-width: 300px;
+    }
+  }
+
+  .steps-container {
+    margin-top: 10px;
+
+    .steps-list {
+      width: 100%;
+      height: max-content;
+      padding: 10px 12px;
+      margin-bottom: 15px;
+      background-color: darken($green, $amount: 0.1);
+      color: $back;
+    }
+  }
+}
+
+.footer {
+  width: 100vw;
+  background-color: rgb(42, 42, 42);
+  height: 200px;
+  margin-top: 150px;
+  color: white;
+  padding: 0;
+
+  @media screen and (max-width: $mediaSM) {
+    width: 100vw;
+    height: 150px;
+    margin-top: 100px;
+  }
+
+  p {
+    text-align: center;
+    margin-top: 150px;
+
+    @media screen and (max-width: $mediaSM) {
+      margin-top: 60px;
+    }
+  }
+}
