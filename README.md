@@ -1,3 +1,9 @@
+## How to View Project at My Github Pages
+
+to view project, go to https://maulanamaleek.github.io/recipely/
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
