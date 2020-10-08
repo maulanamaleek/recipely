@@ -9,7 +9,7 @@ export default function NavBar() {
         <h2>Recipely</h2>
 
         <div className="navbar-link">
-          <Link to="/">
+          <Link to="/recipely">
             <p>Random</p>
           </Link>
           <Link to="/seafood">
