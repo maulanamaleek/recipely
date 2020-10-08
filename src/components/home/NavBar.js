@@ -7,6 +7,7 @@ export default function NavBar() {
     <div className="navbar-container">
       <div className="navbar-content">
         <h2>Recipely</h2>
+
         <div className="navbar-link">
           <Link to="/">
             <p>Random</p>
